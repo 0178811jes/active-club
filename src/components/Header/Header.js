@@ -8,6 +8,7 @@ const Header = () => {
         <div className='header'>
             <FontAwesomeIcon icon={faShoppingCart}></FontAwesomeIcon>
             <h1>SPORTS-ACTIVE-CLUB</h1>
+           
         </div>
     );
 };

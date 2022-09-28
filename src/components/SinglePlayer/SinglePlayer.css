@@ -1,0 +1,33 @@
+.player{
+    width: 300px;
+    height: 510px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 20px;
+    
+}
+.player img {
+   margin: 20px;
+  margin-left: 5px;
+   width: 286px;
+   height: 286px;
+   box-shadow: 2px 2px 4px gainsboro;
+   border-radius: 5px;
+   
+}
+.player h4{
+    font-size: 21px;
+    font-weight: 400;
+}
+.player button{
+    width: 100%;
+    background-color: blue;
+    
+    border-radius:10px ;
+    border: none;
+   
+    bottom: 0;
+}
+.player button:hover{
+    background-color: aqua;
+}
