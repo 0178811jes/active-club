@@ -1,16 +1,30 @@
-import { getValue } from '@testing-library/user-event/dist/utils';
+// import { getValue } from '@testing-library/user-event/dist/utils';
 import React from 'react';
 import { useState } from 'react';
-import './Cart.css'
-
+import './Cart.css';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Cart = (props) => {
     const {count} =props;
+
+    const [ cart, setCart] = useState([])
     
     const [value, setValue] =useState(0);
     const handlerBreakButton=(value)=>{
         setValue(value);
     }
+    // const prevBreakButton =localStorage.getItem("breaktime");
+    // const oldBreakButton =JSON.parse(prevBreakButton);
+
+    // if(oldBreakButton){
+    //     localStorage.setItem("breaktime",JSON.stringify[...oldBreakButton,value]);
+
+    // }
+    // else{
+
+    // }
+    
 
     let total= 0;
     for(const player of count){
@@ -18,7 +32,9 @@ const Cart = (props) => {
         total = total + player.time;
     }
 
-
+    const handlerActivity =()=>{
+        toast ("wow Good Job");
+    }
 
     return (
         <div>
@@ -47,10 +63,12 @@ const Cart = (props) => {
                     <h4>Break Time:{value}</h4>
                     </div>
 
-                    <button className='btn-activity'>
+                    <button onClick={handlerActivity} className='btn-activity'>
                         <p>Activity Complited</p>
                     </button>
+                    <ToastContainer></ToastContainer>
                 </div>
+
             </div>
         </div>
     );

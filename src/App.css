@@ -36,9 +36,5 @@
     transform: rotate(360deg);
   }
 }
-@media screen and(max-width:467) {
-  .players-container{
-    grid-template-columns: repeat(1,1fr);
-  }
-}
+
 

@@ -3,7 +3,7 @@ import './SinglePlayer.css';
 
 const SinglePlayer = (props) => {
     const {handlerAddToList, SinglePlayer} =props;
-    const {idSport,strFormat,strSport,strSportThumb,time} = props.player;
+    const {id,strFormat,strSport,strSportThumb,time} = props.player;
 
     
 
@@ -11,7 +11,7 @@ const SinglePlayer = (props) => {
         <div className='player'>
             <img src={strSportThumb} alt="" />
             <h4>Sports Name:{strSport}</h4>
-            <p>Id:{idSport}</p>
+            <p>Id:{id}</p>
             <p><small>Team Name:{strFormat}</small></p>
             <p>Time:{time}m</p>
             

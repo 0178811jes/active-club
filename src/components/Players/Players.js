@@ -33,7 +33,7 @@ const Players = () => {
         <div className='players-container'>
             <div className="sports-container">
                {
-                players.map(player=> <SinglePlayer 
+                players.map(player=> <SinglePlayer   
                 handlerAddToList={handlerAddToList}
                 player={player}
                 ></SinglePlayer>)
