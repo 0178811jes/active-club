@@ -1,8 +1,9 @@
 import React from 'react';
+import './Footer.css';
 
 const footer = () => {
     return (
-        <div>
+        <div className='footer'>
            <div>
             <h5>Q 1: How does React work? </h5>
             <p>Ans:A React app usually has a single root DOM node. Rendering an element into the DOM will change the user interface of the page.For instance, the following code displays “Hello World” on the page by rendering the element into a DOM node called root.Users can create a representation of a DOM node by declaring the Element function in React. The code below contains a combination of HTML and JavaScript:</p>
