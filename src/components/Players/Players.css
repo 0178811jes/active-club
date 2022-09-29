@@ -8,4 +8,22 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+    
+}
+.cart-container{
+    border: 1px solid gray;
+    margin: 5px;
+    padding: 2px;
+}
+.add-break {
+   
+    display: flex;
+    gap: 2px;
+}
+
+
+@media screen and (max-width:468px) {
+    .players-container{
+        grid-template-columns: repeat(1,1fr);
+    }
 }
