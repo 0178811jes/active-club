@@ -23,7 +23,7 @@ const Players = () => {
         // console.log(player);
         const newCaunt =[...count,player];
         setCount(newCaunt);
-        console.log(newCaunt)
+        
     }
 
 

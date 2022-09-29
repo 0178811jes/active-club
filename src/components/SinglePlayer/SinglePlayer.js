@@ -13,7 +13,7 @@ const SinglePlayer = (props) => {
             <h4>Sports Name:{strSport}</h4>
             <p>Id:{idSport}</p>
             <p><small>Team Name:{strFormat}</small></p>
-            <p>Time:{time}</p>
+            <p>Time:{time}m</p>
             
             <button onClick={() => props.handlerAddToList(props.player)} className='btn'>
                 <p>Add To List</p>

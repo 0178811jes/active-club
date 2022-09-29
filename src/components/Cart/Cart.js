@@ -1,6 +1,17 @@
 import React from 'react';
+import './Cart.css'
 
-const Cart = ({count}) => {
+
+const Cart = (props) => {
+    const {count} =props;
+   
+
+    let total= 0;
+    for(const player of count){
+        
+        total = total + player.time;
+    }
+
     return (
         <div>
             <div>
@@ -20,7 +31,7 @@ const Cart = ({count}) => {
                 <div>
                     <h2>Exercise Details</h2>
                     <div>
-                        <h4>Exercise Time:{count.length}</h4>
+                        <h4>Exercise Time:{total}m</h4>
 
                         <h4>Break Time:</h4>
                     </div>
