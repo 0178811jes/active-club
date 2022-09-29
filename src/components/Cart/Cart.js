@@ -1,4 +1,4 @@
-// import { getValue } from '@testing-library/user-event/dist/utils';
+import { getValue } from '@testing-library/user-event/dist/utils';
 import React from 'react';
 import { useState } from 'react';
 import './Cart.css';
@@ -11,19 +11,13 @@ const Cart = (props) => {
     const [ cart, setCart] = useState([])
     
     const [value, setValue] =useState(0);
+
     const handlerBreakButton=(value)=>{
+        localStorage.setItem('breakTime',value);
+        const getTime=localStorage.getItem('breakTime');
         setValue(value);
     }
-    // const prevBreakButton =localStorage.getItem("breaktime");
-    // const oldBreakButton =JSON.parse(prevBreakButton);
-
-    // if(oldBreakButton){
-    //     localStorage.setItem("breaktime",JSON.stringify[...oldBreakButton,value]);
-
-    // }
-    // else{
-
-    // }
+    
     
 
     let total= 0;
@@ -37,8 +31,8 @@ const Cart = (props) => {
     }
 
     return (
-        <div>
-            <div>
+        <div className='container'>
+            <div className='biodata'>
                 <h4>Jesmin Ara</h4>
                 <p>I lives in Dhaka</p>
                 <p>My home district in Rajshahi</p>
@@ -60,7 +54,7 @@ const Cart = (props) => {
 
 
                     <div className='breaktime'>
-                    <h4>Break Time:{value}</h4>
+                    <h4>Break Time:{value || localStorage.getItem('breakTime')} m</h4>
                     </div>
 
                     <button onClick={handlerActivity} className='btn-activity'>

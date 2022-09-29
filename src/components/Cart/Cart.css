@@ -1,3 +1,16 @@
+.biodata{
+    color: blue;
+    border: 2px solid gray;
+    background-color: gray;
+    border-radius: 5px;
+
+}
+
+.btn-click{
+    margin-top: 5px;
+    gap: 2px;
+}
+
 @media screen and(max-width:468px) {
     .players-container{
       grid-template-columns: repeat(1,1fr);
