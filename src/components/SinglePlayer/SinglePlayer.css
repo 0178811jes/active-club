@@ -20,6 +20,7 @@
 .player button{
     width: 100%;
     background-color: blue;
+    color: white;
     
     border-radius:10px ;
     border: none;
